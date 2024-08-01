@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class Database{
+            constructor(){
+                document.write(`connected with database`)
+            }
+            insert(){
+                document.write("record insert")
+            }
+            Delete(){
+                document.write("deleted")
+            }
+        }
+        function DBActions(action){
+            switch(action){
+                case "insert":
+                let obj1=new Database(document.querySelector("select").value);
+                obj.insert();
+                break;
+                case "Delete":
+                    let obj2=new Database();
+                    obj2.Delete()
+                    break;
+            }
+        }
+    </script>
+</head>
+<body>
+    <select>
+        <option>choose db</option>
+        <option>mysql</option>
+        <option>mongodb</option>
+    </select>
+    <button onclick="DBActions('insert')">Insert</button>
+    <button onclick="DBActions('Delete')">Delete</button>
+</body>
+</html>
