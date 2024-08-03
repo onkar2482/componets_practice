@@ -8,12 +8,13 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css'
 
 import '../node_modules/bootstrap-icons/font/bootstrap-icons.css'
 import { PropsDemo2 } from './components/props-demo/props-demo2';
+import { AdminLogin } from './class-component/adminlogin/admin-login';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <PropsDemo2 />
+    <AdminLogin />
   </React.StrictMode>
 );
 
