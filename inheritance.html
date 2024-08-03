@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class SBI{
+             debit="you are debit 2000<br>"
+            Print(){
+                document.write(`${this.debit}`)
+            }
+        }
+        class SBI2 extends SBI{
+             Credit="you are Credit 2000<br>"
+            Print(){
+                super.Print()
+                document.write(`${this.Credit}`)
+            }
+        }
+        class SBI3 extends SBI2{
+             bal="you are Credit 2000<br>"
+            Print(){
+                super.Print()
+                document.write(`${this.bal}`)
+            }
+        }
+
+        function checkclick(){
+            var ver=document.querySelector("select").value;
+            switch(ver){
+                case "ver1":
+                    let obj=new SBI();
+                    obj.Print()
+                    break;
+
+                    case "ver2":
+                    let obj2=new SBI2();
+                    obj2.Print()
+                    break;
+
+                    case "ver3":
+                    let obj3=new SBI3();
+                    obj3.Print()
+                    break;
+
+                    default:
+                        document.write("plz select transaction")
+                        break;
+
+            }
+        }
+    </script>
+</head>
+<body>
+    <fieldset>
+        <label>Check transaction</label>
+        <select>
+        <option value="-1">select transaction</option>
+        <option value="ver1">Debit</option>
+        <option value="ver2">credit</option>
+        <option value="ver3" >balance</option>
+        </select>
+        <button onclick="checkclick()">check</button>
+    </fieldset>
+</body>
+</html>

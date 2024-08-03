@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class Derived{
+             constructor(){
+              document.write("this super constructor")
+             }
+        }
+
+        class Sub extends Derived{
+             constructor(){
+              document.write("this sub constructor")
+             }
+        }
+
+        let obj=new Sub();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

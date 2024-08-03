@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+          class HDFC_Bank_Version1
+    {
+        PersonalBanking="personal banking Service -General Customer<br>";
+        NRIBanking="NRI Banking Service-NRT Customers <br>";
+        Print(){
+            document.write(`${this.PersonalBanking}<br> ${this.NRIBanking}<br> `);
+        }
+    }
+    class HDFC_Bank_Version2
+    {
+        CreditCards="Credit Card Payment<br>";
+        Print(){
+            let obj= new HDFC_Bank_Version1();
+            obj.Print()
+            document.write(`${this.CreditCards}`);
+        }
+    }
+    class HDFC_Bank_Version3
+    {
+        loan="personal and car loan<br>";
+        Print(){
+           let obj=new HDFC_Bank_Version2();
+           obj.Print(); 
+            document.write(`${this.loan}`)
+        }
+    }
+    function install(){
+      var ver=document.querySelector("select").value;
+      switch(ver){
+        case "ver1":
+            let obj1=new HDFC_Bank_Version1();
+            obj1.Print();
+            break;
+
+            case "ver2":
+            let obj2=new HDFC_Bank_Version2();
+            obj2.Print();
+            break;
+
+            case "ver3":
+            let obj3=new HDFC_Bank_Version1();
+            obj3.Print();
+            break;   
+            default:
+                document.write("plz select version") 
+                break;
+      }  
+    }
+    </script>
+</head>
+<body>
+  <fieldset>
+    <legend>Install Version</legend>
+    <select>
+        <option value="-1">Select Vesrion</option>
+        <option value="ver1">version 1 2022</option>
+        <option value="ver2">version 2 2023</option>
+        <option value="ver3">version 3 2024</option>
+    </select>
+    <button onclick="install()">Install</button>
+  </fieldset>
+</body>
+</html>
