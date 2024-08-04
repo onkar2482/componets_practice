@@ -1,4 +1,6 @@
 import React from 'react';
+import axios from 'axios';
+
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
@@ -10,12 +12,14 @@ import '../node_modules/bootstrap-icons/font/bootstrap-icons.css'
 import { PropsDemo2 } from './components/props-demo/props-demo2';
 import { AdminLogin } from './class-component/adminlogin/admin-login';
 import { State } from './class-component/state/class-state';
+import { ClassEventDemo } from './class-component/class-event/class-event-demo';
+import { Shopper } from './class-component/class-event/class-event2';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <State />
+    <Shopper />
   </React.StrictMode>
 );
 
