@@ -1,6 +1,7 @@
 import axios from 'axios';
 
 import React from 'react';
+import { Login } from '../adminlogin/login';
 
 export class Shopper extends React.Component{
 constructor(){
@@ -67,6 +68,7 @@ render(){
                 </div>
                 </nav>
                 <main className='col-10 d-flex flex-wrap'>
+                    
                     {
                             this.state.products.map(product=>
                                 <div key={product.id} className='card p-2 m-2' style={{width:'200px'}}>

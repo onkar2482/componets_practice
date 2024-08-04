@@ -14,12 +14,13 @@ import { AdminLogin } from './class-component/adminlogin/admin-login';
 import { State } from './class-component/state/class-state';
 import { ClassEventDemo } from './class-component/class-event/class-event-demo';
 import { Shopper } from './class-component/class-event/class-event2';
+import { CycleDemo } from './class-component/cycle-demo/cycle-demo';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Shopper />
+    <CycleDemo />
   </React.StrictMode>
 );
 
