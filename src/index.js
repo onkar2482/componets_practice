@@ -15,12 +15,13 @@ import { State } from './class-component/state/class-state';
 import { ClassEventDemo } from './class-component/class-event/class-event-demo';
 import { Shopper } from './class-component/class-event/class-event2';
 import { CycleDemo } from './class-component/cycle-demo/cycle-demo';
+import { Shop } from './class-component/shop/shop';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <CycleDemo />
+    <Shop />
   </React.StrictMode>
 );
 
