@@ -16,12 +16,14 @@ import { ClassEventDemo } from './class-component/class-event/class-event-demo';
 import { Shopper } from './class-component/class-event/class-event2';
 import { CycleDemo } from './class-component/cycle-demo/cycle-demo';
 import { Shop } from './class-component/shop/shop';
+import { MaterialDemo } from './components/props-demo/material-demo/material-demo';
+import { DatePickerDemo } from './components/props-demo/material-demo/date';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Shop />
+    <DatePickerDemo />
   </React.StrictMode>
 );
 
